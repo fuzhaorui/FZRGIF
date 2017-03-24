@@ -15,6 +15,8 @@
 		288266EF1BFC4EFC00C47081 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 288266ED1BFC4EFC00C47081 /* LaunchScreen.storyboard */; };
 		288266FA1BFC4EFC00C47081 /* GIFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 288266F91BFC4EFC00C47081 /* GIFTests.m */; };
 		288267051BFC4EFC00C47081 /* GIFUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 288267041BFC4EFC00C47081 /* GIFUITests.m */; };
+		288267181BFC50F400C47081 /* FZRGIFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 288267171BFC50F400C47081 /* FZRGIFView.m */; };
+		2882671C1BFC5E1300C47081 /* ren.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2882671B1BFC5E1300C47081 /* ren.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		288267001BFC4EFC00C47081 /* GIFUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GIFUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		288267041BFC4EFC00C47081 /* GIFUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIFUITests.m; sourceTree = "<group>"; };
 		288267061BFC4EFC00C47081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		288267161BFC50F400C47081 /* FZRGIFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZRGIFView.h; sourceTree = "<group>"; };
+		288267171BFC50F400C47081 /* FZRGIFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZRGIFView.m; sourceTree = "<group>"; };
+		2882671B1BFC5E1300C47081 /* ren.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ren.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 		288266DE1BFC4EFC00C47081 /* GIF */ = {
 			isa = PBXGroup;
 			children = (
+				288267121BFC50D900C47081 /* FZRGIFView */,
 				288266E21BFC4EFC00C47081 /* AppDelegate.h */,
 				288266E31BFC4EFC00C47081 /* AppDelegate.m */,
 				288266E51BFC4EFC00C47081 /* ViewController.h */,
@@ -108,6 +114,7 @@
 				288266E81BFC4EFC00C47081 /* Main.storyboard */,
 				288266EB1BFC4EFC00C47081 /* Assets.xcassets */,
 				288266ED1BFC4EFC00C47081 /* LaunchScreen.storyboard */,
+				2882671B1BFC5E1300C47081 /* ren.gif */,
 				288266F01BFC4EFC00C47081 /* Info.plist */,
 				288266DF1BFC4EFC00C47081 /* Supporting Files */,
 			);
@@ -138,6 +145,15 @@
 				288267061BFC4EFC00C47081 /* Info.plist */,
 			);
 			path = GIFUITests;
+			sourceTree = "<group>";
+		};
+		288267121BFC50D900C47081 /* FZRGIFView */ = {
+			isa = PBXGroup;
+			children = (
+				288267161BFC50F400C47081 /* FZRGIFView.h */,
+				288267171BFC50F400C47081 /* FZRGIFView.m */,
+			);
+			path = FZRGIFView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +261,7 @@
 			files = (
 				288266EF1BFC4EFC00C47081 /* LaunchScreen.storyboard in Resources */,
 				288266EC1BFC4EFC00C47081 /* Assets.xcassets in Resources */,
+				2882671C1BFC5E1300C47081 /* ren.gif in Resources */,
 				288266EA1BFC4EFC00C47081 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +289,7 @@
 			files = (
 				288266E71BFC4EFC00C47081 /* ViewController.m in Sources */,
 				288266E41BFC4EFC00C47081 /* AppDelegate.m in Sources */,
+				288267181BFC50F400C47081 /* FZRGIFView.m in Sources */,
 				288266E11BFC4EFC00C47081 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

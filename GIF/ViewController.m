@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "FZRGIFView.h"
+//#import "SCGIFImageView.h"
 
 @interface ViewController ()
 
@@ -17,6 +19,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+
+    FZRGIFView *gif = [[FZRGIFView alloc]initWithFrame:CGRectMake(0, 0, 100, 100) andGifImageName:@"ren.gif" andRate:0.1 andCount:2];
+//    gif.center = self.view.center;
+    [gif start];
+    [self.view addSubview:gif];
+    
+    FZRGIFView *gif1 = [[FZRGIFView alloc]initWithFrame:CGRectMake(0, 150, 100, 100) andGifImageName:@"ren.gif" andRate:0.01];
+    [gif1 start];
+    [self.view addSubview:gif1];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
