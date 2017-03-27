@@ -128,15 +128,15 @@
     
     _index++;
     if (_index == _count) {
+        
+         _index = 0;
+        if (_playCount>0) {
+            _playCount--;
+        }
         if (_playCount == 0) {
             [self stop];
         }
-        else if(_playCount > 0)
-        {
-            _playCount--;
-            _index = 0;
-        }
-        _index = 0;
+
     }
 }
 
